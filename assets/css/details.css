@@ -1,0 +1,46 @@
+/* Estilos para o painel de detalhes */
+.detail-panel {
+    position: fixed;
+    right: -400px; /* Começa fora da tela */
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.detail-panel.show-panel {
+    right: 0;
+}
+
+.detail-panel img {
+    max-width: 200px;
+    display: block;
+    margin: 20px auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.pokemon-details {
+    text-align: center;
+}
+
+.pokemon-details h2 {
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.pokemon-details .types {
+    margin: 15px 0;
+}
